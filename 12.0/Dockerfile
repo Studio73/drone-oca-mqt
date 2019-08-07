@@ -5,7 +5,7 @@ RUN apt-get update \
 RUN mkdir -p /usr/share/man/man1
 RUN mkdir -p /usr/share/man/man7
 RUN apt-get install -y --no-install-recommends curl wget postgresql-client \
-        git tcl gcc bzip2 expect-dev python-lxml \
+        git tcl gcc bzip2 expect-dev python-lxml libxmlsec1-dev pkg-config \
         libsasl2-dev libldap2-dev \
         libxml2-dev libxslt-dev zlib1g-dev \
         && rm -rf /var/lib/apt/lists/* \
